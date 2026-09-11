@@ -1,9 +1,5 @@
-//your JS code here. If required.
-const btn = document.querySelector('input[type="button"]');
+function removecolor() {
+    const select = document.getElementById("colorSelect");
 
-
-btn.addEventListener("click", function () {
-	const selected  = document.getElementById("colorSelect");
-
-	selected .remove(selected.selectedIndex);
-})
+    select.options[select.selectedIndex].remove();
+}
